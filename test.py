@@ -28,7 +28,7 @@ b = float(input("syötä ensimmäinen numero : "))
 c = float(input("syötä ensimmäinen numero : "))
 summa = a+b+c
 tulo = a*b*c
-keskiarvo = summa // 3
+keskiarvo = summa / 3
 print(f"summa on: {summa} , tulos on:{tulo} , keskiarvo on:{keskiarvo}")
 
 # 5
@@ -36,7 +36,7 @@ print(f"summa on: {summa} , tulos on:{tulo} , keskiarvo on:{keskiarvo}")
 a = float(input("syötä leiviskät : "))
 b = float(input("syötä naulat : "))
 c = float(input("syötä luodit : "))
-total = (a*20*32+b*32+c)*13.3//1000
+total = (a*20*32+b*32+c)*13.3/1000
 print(f"Massa nykymittojen mukaan:{total} kg")
 
 # 6
