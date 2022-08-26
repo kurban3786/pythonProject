@@ -1,40 +1,53 @@
-# Moduuli2, syöte- ja muutujaesimerkkejä
+# 1
 import math
 import random
 
-username = "kalle"
-# int
-age = 6
-age = age+1
-# float value
-wallet_balance = 15.40
-fullname = "kalle kontio"
-# merkkijonojen liitäminen
-user = username + " (" + fullname + ")"
-print("käyttäjä", user, "on "+str(age)+" vuotta")
-print(wallet_balance)
-price = input(username+" mitä maksaa lippu on ?")
-wallet_balance = wallet_balance - float(price)
-print(f"last balance {wallet_balance:.2f} euroa")
+print("Hei mitä sun nimi on ?")
+user = input()
+print(f"terve , {user}")
 
-# ympyrän pinta-alan laskeminen
-# kaava: pii (3.14) * r*r
-# säde r
+# 2
+
 r = float(input("anna ympyrän säde: "))
 area = math.pi * r * r
 print(f"{r}(m) säteisin ympyrän pintaála on {area:.3f} neliömetriä.")
 
-# "satunnaisluvun" tuottaminen
+# 3
 
-some_random_number = random.randint(1, 9)
-print(f"Arvottu numero väliltä 1-9: {some_random_number}")
-some_random_number = random.randint(1, 9)
-print(f"Arvottu numero väliltä 1-9: {some_random_number}")
-some_random_number = random.randint(1, 9)
-print(f"Arvottu numero väliltä 1-9: {some_random_number}")
-some_random_number = random.randint(1, 9)
-print(f"Arvottu numero väliltä 1-9: {some_random_number}")
-some_random_number = random.randint(1, 9)
-print(f"Arvottu numero väliltä 1-9: {some_random_number}")
-some_random_number = random.randint(1, 9)
-print(f"Arvottu numero väliltä 1-9: {some_random_number}")
+x = float(input("anna suorakulmion kannan : "))
+y = float(input("anna suorakulmion korkeuden : "))
+piirin = (x+y)*2
+ala = x*y
+print(f"suorakulmion piirin on : {piirin}")
+print(f"suorakulmion pinta-ala on : {ala}")
+
+# 4
+
+a = float(input("syötä ensimmäinen numero : "))
+b = float(input("syötä ensimmäinen numero : "))
+c = float(input("syötä ensimmäinen numero : "))
+summa = a+b+c
+tulo = a*b*c
+keskiarvo = summa // 3
+print(f"summa on: {summa} , tulos on:{tulo} , keskiarvo on:{keskiarvo}")
+
+# 5
+
+a = float(input("syötä leiviskät : "))
+b = float(input("syötä naulat : "))
+c = float(input("syötä luodit : "))
+total = (a*20*32+b*32+c)*13.3//1000
+print(f"Massa nykymittojen mukaan:{total} kg")
+
+# 6
+some_random_number = random.randint(0, 9)
+some_random_number2 = random.randint(0, 9)
+some_random_number3 = random.randint(0, 9)
+
+print(f"Arvottu numero väliltä 0-9: {some_random_number}{some_random_number2}{some_random_number3}")
+
+some_random_number = random.randint(1, 6)
+some_random_number2 = random.randint(1, 6)
+some_random_number3 = random.randint(1, 6)
+some_number4 = random.randint(1, 6)
+print(f"Arvottu numero väliltä 1-6: {some_random_number}{some_random_number2}{some_random_number3}{some_number4}")
