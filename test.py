@@ -36,8 +36,10 @@ print(f"summa on: {summa} , tulos on:{tulo} , keskiarvo on:{keskiarvo}")
 a = float(input("syötä leiviskät : "))
 b = float(input("syötä naulat : "))
 c = float(input("syötä luodit : "))
-total = (a*20*32+b*32+c)*13.3/1000
-print(f"Massa nykymittojen mukaan:{total} kg")
+total = (a*20*32+b*32+c)*13.3
+kg = total//1000
+g = total% 1000
+print(f"Massa nykymittojen mukaan:{kg} kg {g}gr")
 
 # 6
 some_random_number = random.randint(0, 9)
